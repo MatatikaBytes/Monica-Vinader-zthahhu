@@ -5,3 +5,14 @@ environments:
 - name: dev
 - name: staging
 - name: prod
+plugins:
+  extractors:
+  - name: tap-tiktok
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-tiktok.git@v1.1.0
+  - name: tap-facebook
+    variant: meltanolabs
+    pip_url: git+https://github.com/Matatika/tap-facebook.git@v0.2.0
+  - name: tap-tiktok
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-tiktok.git@v1.1.0

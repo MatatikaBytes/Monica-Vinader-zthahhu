@@ -1,0 +1,64 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-tiktok",
+  "namespace": "tap_tiktok",
+  "variant": "matatika",
+  "label": "TikTok Ads",
+  "docs": "https://www.matatika.com/data-details/tap-tiktok/",
+  "repo": "https://github.com/Matatika/tap-tiktok",
+  "pip_url": "git+https://github.com/Matatika/tap-tiktok.git@v1.1.0",
+  "description": "TikTok Ads is a social media advertising platform for businesses to promote their products or services on TikTok.\n\nTikTok Ads allows businesses to create and run ads on the popular social media platform TikTok, reaching a large and engaged audience of users. With a variety of ad formats available, including in-feed ads, brand takeovers, and hashtag challenges, businesses can tailor their advertising strategy to their specific goals and target audience. TikTok Ads also provides detailed analytics and targeting options to help businesses optimize their campaigns and reach the right audience.",
+  "logo_url": "/assets/logos/extractors/tiktok.png",
+  "capabilities": [
+    "about",
+    "catalog",
+    "discover",
+    "schema-flattening",
+    "state",
+    "stream-maps"
+  ],
+  "settings_group_validation": [
+    [
+      "access_token",
+      "advertiser_ids",
+      "start_date"
+    ]
+  ],
+  "settings": [
+    {
+      "name": "access_token",
+      "kind": "string",
+      "label": "Access Token",
+      "description": "The token to authenticate against the API service",
+      "sensitive": true,
+      "required": "true"
+    },
+    {
+      "name": "advertiser_ids",
+      "kind": "array",
+      "label": "Advertiser IDs",
+      "description": "List of Advertiser IDs",
+      "required": "true"
+    },
+    {
+      "name": "start_date",
+      "kind": "date_iso8601",
+      "label": "Start Date",
+      "description": "The earliest record date to sync"
+    },
+    {
+      "name": "include_deleted",
+      "kind": "boolean",
+      "value": true,
+      "label": "Include Deleted",
+      "description": "If true then deleted status entities will also be returned"
+    },
+    {
+      "name": "lookback",
+      "kind": "integer",
+      "value": 0,
+      "label": "Lookback",
+      "description": "The number of days of data to reload from the current date (ignored if current state of the extractor has a start date earlier than the current date minus number of lookback days)"
+    }
+  ]
+}

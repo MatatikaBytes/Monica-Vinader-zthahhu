@@ -16,6 +16,9 @@ plugins:
   - name: tap-facebook-systemtoken
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-facebook.git
+  - name: tap-postgres
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/pipelinewise-tap-postgres.git@v1.0.0
   loaders:
   - name: target-bigquery
     variant: matatika

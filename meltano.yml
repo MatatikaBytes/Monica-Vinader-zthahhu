@@ -16,3 +16,7 @@ plugins:
   - name: tap-tiktok
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-tiktok.git@v1.1.0
+  loaders:
+  - name: target-bigquery
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/target-bigquery.git@v1.0

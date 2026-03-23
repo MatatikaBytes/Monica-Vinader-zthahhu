@@ -1,0 +1,76 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-spreadsheets-sharepoint",
+  "namespace": "tap_spreadsheets_anywhere",
+  "variant": "matatika",
+  "label": "SharePoint",
+  "docs": "https://www.matatika.com/data-details/tap-spreadsheets-sharepoint/",
+  "repo": "https://github.com/Matatika/tap-spreadsheets-anywhere",
+  "pip_url": "git+https://github.com/Matatika/tap-spreadsheets-anywhere.git@feat/sharepoint",
+  "python": "python3.10",
+  "executable": "tap-spreadsheets-anywhere",
+  "description": "Sync spreadsheets data from SharePoint",
+  "logo_url": "/assets/images/datasource/tap-spreadsheets-anywhere.png",
+  "capabilities": [
+    "catalog",
+    "discover",
+    "state"
+  ],
+  "settings": [
+    {
+      "name": "tables",
+      "kind": "array",
+      "label": "Tables",
+      "description": "A setting in Spreadsheets Anywhere that allows users to select which tables they want to connect to and use in their application.",
+      "hidden": false,
+      "sensitive": false,
+      "required": "true",
+      "protected": false
+    },
+    {
+      "name": "oauth_credentials.authorization_url",
+      "kind": "string",
+      "value": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "hidden": true,
+      "sensitive": false,
+      "protected": false
+    },
+    {
+      "name": "oauth_credentials.scope",
+      "kind": "string",
+      "value": "Sites.Read.All Files.Read.All",
+      "hidden": true,
+      "sensitive": false,
+      "protected": false
+    },
+    {
+      "name": "oauth_credentials.access_token",
+      "kind": "string",
+      "hidden": true,
+      "sensitive": true,
+      "protected": false
+    },
+    {
+      "name": "oauth_credentials.refresh_token",
+      "kind": "string",
+      "hidden": true,
+      "sensitive": false,
+      "required": "true",
+      "protected": false
+    },
+    {
+      "name": "oauth_credentials.refresh_proxy_url",
+      "kind": "string",
+      "hidden": true,
+      "sensitive": true,
+      "protected": false
+    },
+    {
+      "name": "oauth_credentials.refresh_proxy_url_auth",
+      "kind": "string",
+      "hidden": true,
+      "sensitive": true,
+      "protected": false
+    }
+  ]
+}

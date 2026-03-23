@@ -51,6 +51,19 @@
       "sensitive": true
     },
     {
+      "name": "access_token",
+      "aliases": [
+        "oauth_credentials.access_token"
+      ],
+      "kind": "string",
+      "label": "Access Token",
+      "description": "A token that grants access to the Instagram API for a specific user account.",
+      "hidden": true,
+      "sensitive": true,
+      "required": false,
+      "protected": false
+    },
+    {
       "name": "start_date",
       "kind": "date_iso8601",
       "label": "Start Date",

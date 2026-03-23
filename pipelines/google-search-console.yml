@@ -1,7 +1,8 @@
 version: pipelines/v0.1
-label: TikTok Ads
+label: Google Search Console
 timeout: 0
 max_retries: 0
 data_components:
-- tap-tiktok
+- tap-google-search-console
 - Google BigQuery
+- dbt

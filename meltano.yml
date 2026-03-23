@@ -11,7 +11,7 @@ plugins:
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-tiktok.git@v1.1.0
   - name: tap-facebook
-    variant: meltanolabs
+    variant: matatika
     pip_url: git+https://github.com/Matatika/tap-facebook.git@v0.2.0
   - name: tap-facebook-systemtoken
     variant: matatika

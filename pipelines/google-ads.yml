@@ -1,8 +1,8 @@
 version: pipelines/v0.1
-label: Facebook Ads - Meltano Labs
+label: Google Ads
 timeout: 0
 max_retries: 0
 data_components:
-- tap-facebook
+- tap-googleads
 - Warehouse
 - dbt

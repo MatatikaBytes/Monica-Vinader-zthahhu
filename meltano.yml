@@ -46,6 +46,9 @@ plugins:
   - name: tap-spreadsheets-anywhere
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-spreadsheets-anywhere@v0.4.1 google-api-core<2.28.0
+  - name: tap-google-search-console
+    variant: singer-io
+    pip_url: tap-google-search-console
   loaders:
   - name: target-bigquery
     variant: matatika

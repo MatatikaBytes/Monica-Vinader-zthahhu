@@ -1,0 +1,73 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-google-search-console",
+  "namespace": "tap_google_search_console",
+  "variant": "singer-io",
+  "label": "Google Search Console",
+  "docs": "https://www.matatika.com/data-details/tap-google-search-console/",
+  "repo": "https://github.com/singer-io/tap-google-search-console",
+  "pip_url": "tap-google-search-console",
+  "description": "Google Search Console is a free web service offered by Google that helps website owners monitor and maintain their site's presence in Google search results. \n\nGoogle Search Console provides website owners with valuable insights into how their site is performing in Google search results. It allows users to monitor their site's search traffic, track keyword rankings, and identify any technical issues that may be affecting their site's visibility in search results. Additionally, Google Search Console provides website owners with tools to submit sitemaps, manage crawl rates, and receive alerts about any security issues that may arise. Overall, Google Search Console is an essential tool for any website owner looking to improve their site's visibility and performance in Google search results.",
+  "logo_url": "/assets/logos/extractors/google-search-console.png",
+  "capabilities": [
+    "catalog",
+    "discover",
+    "state"
+  ],
+  "settings": [
+    {
+      "name": "refresh_token",
+      "kind": "string",
+      "label": "Refresh Token",
+      "description": "A token used to obtain a new access token when the original token expires.",
+      "hidden": false,
+      "sensitive": true,
+      "protected": false
+    },
+    {
+      "name": "client_secret",
+      "kind": "string",
+      "label": "Client Secret",
+      "description": "A secret key used to authenticate the client application.",
+      "hidden": false,
+      "sensitive": true,
+      "protected": false
+    },
+    {
+      "name": "request_timeout",
+      "kind": "integer",
+      "label": "Request Timeout",
+      "description": "The maximum amount of time to wait for a response from the API.",
+      "hidden": false,
+      "sensitive": false,
+      "protected": false
+    },
+    {
+      "name": "site_urls",
+      "kind": "string",
+      "label": "Site URLs",
+      "description": "The URLs of the sites that the API will access.",
+      "hidden": false,
+      "sensitive": false,
+      "protected": false
+    },
+    {
+      "name": "client_id",
+      "kind": "string",
+      "label": "Client ID",
+      "description": "A unique identifier for the client application.",
+      "hidden": false,
+      "sensitive": true,
+      "protected": false
+    },
+    {
+      "name": "user_agent",
+      "kind": "string",
+      "label": "User Agent",
+      "description": "A string identifying the client application to the API.",
+      "hidden": false,
+      "sensitive": false,
+      "protected": false
+    }
+  ]
+}
